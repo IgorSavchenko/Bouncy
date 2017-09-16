@@ -34,8 +34,6 @@ body {
   justify-content:space-between;
 }
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Sans+Pro:300');
-//helper
-// @import "helpers/media-queries";
 // sections
 @import "sections/header";
 @import "sections/portfolio";
@@ -44,7 +42,6 @@ body {
 @import "sections/testimonials";
 @import "sections/contact";
 @import "sections/footer";
-
 // blocks
 @import "blocks/filters";
 @import "blocks/slider";

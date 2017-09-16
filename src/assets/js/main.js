@@ -35,7 +35,6 @@ imgLoad.on( 'done', function(instance, image) {
   });
 });
 //----------------------------------------------------
-window.onload = function() {
   var map;
   function initMap() {
     var beetroot = {lat: 49.569, lng: 34.583};
@@ -49,5 +48,4 @@ window.onload = function() {
           map: map
         });
   }
-initMap();
-};
+  initMap();
