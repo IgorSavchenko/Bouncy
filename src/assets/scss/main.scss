@@ -33,13 +33,9 @@ body {
   flex-direction: column;
   justify-content:space-between;
 }
-.is-active {
-  border-radius: 16px 17px 17px 16px/16px 16px 17px 17px;
-  border: 1px solid $c-white;
-}
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Sans+Pro:300');
 //helper
-@import "helpers/media-queries";
+// @import "helpers/media-queries";
 // sections
 @import "sections/header";
 @import "sections/portfolio";

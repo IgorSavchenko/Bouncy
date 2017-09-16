@@ -16,15 +16,15 @@
 // });
 //----------------------------------------------------
 // init Masonry with element when all images are Loaded
-// import Masonry from 'masonry-layout';
-// import imagesLoaded from 'imagesloaded';
-// let imgLoad = imagesLoaded('.grid');
-// imgLoad.on( 'done', function(instance, image) {
-//   //creates Masonry object from .grid
-//   let grid = document.querySelector('.grid');
-//   let msnry = new Masonry( grid, {
-//     // options
-//     itemSelector: ".grid-item"
-//     // columnWidth: 25%
-//   });
-// });
+import Masonry from 'masonry-layout';
+import imagesLoaded from 'imagesloaded';
+let imgLoad = imagesLoaded('.portfolio__list');
+imgLoad.on( 'done', function(instance, image) {
+  //creates Masonry object from .grid
+  let grid = document.querySelector('.portfolio__list');
+  let msnry = new Masonry( grid, {
+    // options
+    itemSelector: ".portfolio__item"
+    // columnWidth: 25%
+  });
+});

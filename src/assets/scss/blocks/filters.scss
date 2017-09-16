@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 75px 0;
   &-item {
     margin: 0 10px;
   }
@@ -14,19 +14,17 @@
     text-decoration: none;
     padding: 0 15px;
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     font-weight: 400;
     color: #464646;
     line-height: 12px;
-    background: #eaeaea;
-    // border-radius: 2px;
-    transition: color 0.3s ease, background 0.3s ease-in-out;
+    padding: 15px 0;
+    transition: border 0.1s ease;
     &:hover {
-      color: $c-green;
-      background: darken(#eaeaea, 30%);
+      border-bottom: 2px solid $c-green;
     }
     &--active, &--active:hover {
-      background: $c-green;
-      color: $c-white;
+      border-bottom: 2px solid $c-green;
     }
   }
 }

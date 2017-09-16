@@ -29,11 +29,6 @@ body {
   justify-content: space-between;
 }
 
-.is-active {
-  border-radius: 16px 17px 17px 16px/16px 16px 17px 17px;
-  border: 1px solid #ffffff;
-}
-
 .header {
   min-height: 100vh;
   padding-top: 45px;
@@ -100,6 +95,11 @@ body {
   background-color: #19bd9a;
 }
 
+.header__menu-link--active {
+  border-radius: 16px 17px 17px 16px/16px 16px 17px 17px;
+  border: 1px solid #ffffff;
+}
+
 .header__title {
   margin-top: 27vh;
   font-size: 35px;
@@ -133,13 +133,56 @@ body {
   cursor: pointer;
 }
 
+.portfolio {
+  padding: 85px 0 100px;
+}
+
+.portfolio .container {
+  padding: 0 25px;
+}
+
+.portfolio__title {
+  font-size: 20px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  margin-bottom: 35px;
+  color: #333b46;
+}
+
+.portfolio__text {
+  margin: 0 auto;
+  max-width: 475px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.portfolio__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio__item {
+  width: 25%;
+  padding: 5px;
+}
+
+.portfolio__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .filters {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 75px 0;
 }
 
 .filters-item {
@@ -151,21 +194,20 @@ body {
   text-decoration: none;
   padding: 0 15px;
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
   font-weight: 400;
   color: #464646;
   line-height: 12px;
-  background: #eaeaea;
-  transition: color 0.3s ease, background 0.3s ease-in-out;
+  padding: 15px 0;
+  transition: border 0.1s ease;
 }
 
 .filters-link:hover {
-  color: #19bd9a;
-  background: #9e9e9e;
+  border-bottom: 2px solid #19bd9a;
 }
 
 .filters-link--active, .filters-link--active:hover {
-  background: #19bd9a;
-  color: #ffffff;
+  border-bottom: 2px solid #19bd9a;
 }
 
 /*# sourceMappingURL=main.css.map */

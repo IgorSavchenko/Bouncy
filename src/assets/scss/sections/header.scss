@@ -56,6 +56,10 @@
         border: 1px solid $c-white;
         background-color: $c-green;
       }
+      &--active {
+          border-radius: 16px 17px 17px 16px/16px 16px 17px 17px;
+          border: 1px solid $c-white;
+      }
     }
   }
   &__title {

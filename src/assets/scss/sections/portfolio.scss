@@ -1,0 +1,37 @@
+.portfolio {
+  padding: 85px 0 100px;
+  background: linear-gradient(to bottom, white, #f3f3f3);
+  & .container {
+    padding: 0 25px;
+  }
+  &__title {
+    font-size: 20px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    margin-bottom: 35px;
+    color: #333b46;
+  }
+  &__text {
+    margin: 0 auto;
+    max-width: 475px;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__item {
+    width: 25%;
+    padding: 5px;
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
