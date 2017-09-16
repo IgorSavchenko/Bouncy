@@ -1,6 +1,8 @@
 // compileOnSave
 // variables
 $c-font: #81868e;
+$c-white: #ffffff;
+$c-green: #19bd9a;
 
 //styles to all elements
 * {
@@ -16,17 +18,31 @@ body {
   line-height: 25px;
   color: $c-font;
 }
-.header {
+.title {
   font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-weight: 300;
 }
 .container {
   max-width: 1170px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+.is-active {
+  border-radius: 16px 17px 17px 16px/16px 16px 17px 17px;
+  border: 1px solid $c-white;
 }
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Sans+Pro:300');
 //helper
 @import "helpers/media-queries";
 // sections
 @import "sections/header";
+@import "sections/portfolio";
 
 // blocks
-// @import "blocks/box";
+@import "blocks/filters";
