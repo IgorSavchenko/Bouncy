@@ -1,0 +1,26 @@
+.slider {
+  padding: 15px 70px;
+  background: $c-white;
+  &__item {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__img {
+    display: block;
+    width: 290px;
+    height: 365px;
+  }
+  &__article {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    max-width: 430px;
+  }
+}

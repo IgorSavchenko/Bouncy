@@ -1,0 +1,36 @@
+.footer {
+  padding: 70px 0 60px;
+  &__logo {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__text {
+    margin: 40px auto;
+    text-align: center;
+    max-width: 470px;
+  }
+  &__social {
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & a {
+      width: 25px;
+      height: 25px;
+      margin: 0 5px;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: blue;
+      border-radius: 50%;
+    }
+    & svg {
+      fill: $c-white;
+    }
+  }
+}
