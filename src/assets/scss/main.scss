@@ -1,0 +1,32 @@
+// compileOnSave
+// variables
+$c-font: #81868e;
+
+//styles to all elements
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+//styles to body
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: $c-font;
+}
+.header {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.container {
+  max-width: 1170px;
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Sans+Pro:300');
+//helper
+@import "helpers/media-queries";
+// sections
+@import "sections/header";
+
+// blocks
+// @import "blocks/box";

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD -->
+  <head>
+    <meta charset="utf-8">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <!-- internal CSS styles -->
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/home.ico">
+    <title>Empty project</title>
+  </head>
+
+<!-- BODY -->
+  <body>
+
+    <div class="mobile">mobile</div>
+    <div class="tablet">tablet</div>
+    <div class="desktop">desktop</div>
+
+    <div class="retina grid">
+      <img class="grid-item" src="assets/img/ian-froome-375650.jpg" alt="slide1">
+      <img class="grid-item" src="assets/img/osman-rana-117191.jpg" alt="slide2">
+      <img class="grid-item" src="assets/img/sean-afnan-244576.jpg" alt="slide3">
+      <img class="grid-item" src="assets/img/christoph-bengtsson-lissalde-80291.jpg" alt="slide4">
+      <img class="grid-item" src="assets/img/sam-ferrara-136526.jpg" alt="slide5">
+    </div>
+
+    <!-- defining svg sprites -->
+    <svg width="0" height="0" style="position: absolute">
+        <symbol id="iconTwitter" class="contact__social-icon" viewBox="0 0 24 19.5">
+          <title>iconTwitter</title>
+          <path
+            d="M714.492,3380.63a9.921,9.921,0,0,1-2.828.77,4.927,4.927,0,0,0,2.165-2.72,9.926,9.926,0,0,1-3.127,1.19,4.927,4.927,0,0,0-8.39,4.49,13.95,13.95,0,0,1-10.149-5.14,4.923,4.923,0,0,0,1.524,6.57,4.81,4.81,0,0,1-2.23-.61c0,0.02,0,.04,0,0.06a4.94,4.94,0,0,0,3.95,4.83,5.035,5.035,0,0,1-1.3.17,4.723,4.723,0,0,1-.927-0.09,4.925,4.925,0,0,0,4.6,3.42,9.884,9.884,0,0,1-6.115,2.11,11.354,11.354,0,0,1-1.175-.07,14.006,14.006,0,0,0,21.557-11.8c0-.21,0-0.42-0.014-0.63A10.211,10.211,0,0,0,714.492,3380.63Z" transform="translate(-690.5 -3378.31)"/>
+        </symbol>
+        <symbol id="iconFacebook" class="contact__social-icon" viewBox="0 0 12.719 24">
+          <title>iconFacebook</title>
+          <path
+            d="M747.792,3386.33v10.74h5.351v-10.69H756.8l0.883-4.45h-4.5v-3.27a0.973,0.973,0,0,1,1-1.05h2.6v-4.54h-4.856c-1.674,0-4.148,2.01-4.148,4.15v4.58h-2.807v4.51Z" transform="translate(-744.969 -3373.06)"/>
+        </symbol>
+        <symbol id="iconLinkedin" class="contact__social-icon" viewBox="0 0 24 24">
+          <title>iconLinkedin</title>
+          <path
+            d="M793.427,3376.11a2.571,2.571,0,0,1-2.768,2.6A2.6,2.6,0,1,1,793.427,3376.11Zm-5.3,21.38v-16.73h5.131v16.73h-5.131Zm8.2-11.39c0-2.09-.067-3.83-0.136-5.34h4.456l0.238,2.33h0.1a5.9,5.9,0,0,1,5.1-2.7c3.375,0,5.907,2.29,5.907,7.22v9.88h-5.131v-9.27c0-2.15-.744-3.62-2.6-3.62a2.82,2.82,0,0,0-2.632,1.95,3.756,3.756,0,0,0-.169,1.29v9.65h-5.131V3386.1Z" transform="translate(-788 -3373.5)"/>
+        </symbol>
+        <symbol id="iconVimeo" class="contact__social-icon" viewBox="0 0 24.25 21.22">
+          <title>iconVimeo</title>
+          <path
+            d="M836.7,3382.47l0.985,1.29s2.031-1.6,2.708-.8,3.262,10.49,4.125,12.28c0.753,1.56,2.83,3.63,5.109,2.15s9.848-7.95,11.2-15.6-9.111-6.05-10.22.62c2.771-1.67,4.25.67,2.832,3.33s-2.708,4.38-3.385,4.38-1.2-1.78-1.971-4.88c-0.8-3.2-.795-8.98-4.123-8.32C840.821,3377.53,836.7,3382.47,836.7,3382.47Z" transform="translate(-836.688 -3376.69)"/>
+        </symbol>
+        <symbol id="iconBe" class="contact__social-icon" viewBox="0 0 23.938 16.16">
+          <title>iconBe</title>
+          <path
+            d="M895.154,3388.53s2.267-.18,2.267-3.01a3.907,3.907,0,0,0-4.2-4.22h-7.729v15.83h7.729s4.717,0.16,4.717-4.67C897.936,3392.46,898.141,3388.53,895.154,3388.53Zm-6.259-4.42h4.323s1.05,0,1.05,1.65-0.618,1.89-1.32,1.89H888.9v-3.54Zm4.1,10.21h-4.1v-4.23h4.323s1.566-.02,1.566,2.17C894.784,3394.11,893.614,3394.31,893,3394.32Zm11.23-8.99c-5.713,0-5.708,6.08-5.708,6.08s-0.392,6.05,5.708,6.05c0,0,5.082.31,5.082-4.21H906.7s0.086,1.7-2.382,1.7a2.462,2.462,0,0,1-2.615-2.75h7.7S910.242,3385.33,904.229,3385.33Zm2.324,4.76h-4.879a2.752,2.752,0,0,1,2.614-2.44C906.58,3387.65,906.553,3390.09,906.553,3390.09Zm0.61-7.86h-6.13v1.95h6.128v-1.95h0Z" transform="translate(-885.5 -3381.31)"/>
+        </symbol>
+      </svg>
+
+      <!-- iconTwitter svg icon use -->
+      <svg class="contact__social-icon" width="24" height="19.5">
+        <use xlink:href="#iconTwitter"></use>
+      </svg>
+      <!-- iconFacebook svg icon use -->
+      <svg class="contact__social-icon" width="12.719" height="24">
+        <use xlink:href="#iconFacebook"></use>
+      </svg>
+      <!-- iconLinkedin svg icon use -->
+      <svg class="contact__social-icon" width="24" height="24">
+        <use xlink:href="#iconLinkedin"></use>
+      </svg>
+      <!-- iconBe svg icon use -->
+      <svg class="contact__social-icon" width="24.25" height="21.22">
+        <use xlink:href="#iconVimeo"></use>
+      </svg>
+      <!-- iconBe svg icon use -->
+      <svg class="contact__social-icon" width="23.938" height="16.16">
+        <use xlink:href="#iconBe"></use>
+      </svg>
+    <!-- scripts -->
+    <script src="assets/js/main.min.js"></script>
+  </body>
+</html>
