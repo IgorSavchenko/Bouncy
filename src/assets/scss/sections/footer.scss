@@ -1,23 +1,29 @@
 .footer {
-  padding: 70px 0 60px;
+  padding: 70px 15px 60px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   &__logo {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
+    margin: 0;
+    transition: opacity 0.2s ease;
+    &:hover {
+      opacity: 0.5;
+    }
   }
   &__text {
-    margin: 40px auto;
-    text-align: center;
+    margin: 40px 0;
     max-width: 470px;
   }
   &__social {
-    margin: 0 auto;
+    margin: 0;
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
     align-items: center;
     justify-content: center;
-    & a {
+    &-link {
       width: 25px;
       height: 25px;
       margin: 0 5px;
@@ -26,10 +32,28 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: blue;
       border-radius: 50%;
+      transition: transform 0.2s ease;
+      &--facebook {
+        background: #3b5998;
+      }
+      &--twitter {
+        background: #26a6d1;
+      }
+      &--linkedin {
+        background: #0e76a8;
+      }
+      &--instagram {
+        background: #3f729b;
+      }
+      &--vimeo {
+        background: #86c9ef;
+      }
+      &:hover {
+        transform: scale(1.3);
+      }
     }
-    & svg {
+    &-icon {
       fill: $c-white;
     }
   }

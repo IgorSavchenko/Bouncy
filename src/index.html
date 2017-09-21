@@ -83,40 +83,43 @@
       </ul>
       <!-- portfolio gallery -->
       <ul class="portfolio__list">
-        <li class="portfolio__item">
+        <!-- elements for masonry -->
+        <li class="grid-sizer"></li>
+        <!-- photoes -->
+        <li class="portfolio__item" data-type="branding">
           <img class="portfolio__img" src="assets/img/img__1.jpg" alt="1">
         </li>
-        <li class="portfolio__item">
+        <li class="portfolio__item" data-type="html">
           <img class="portfolio__img" src="assets/img/img__2.jpg" alt="2">
         </li>
-        <li class="portfolio__item">
+        <li class="portfolio__item" data-type="web">
           <img class="portfolio__img" src="assets/img/img__3.jpg" alt="3">
         </li>
-        <li class="portfolio__item">
+        <li class="portfolio__item" data-type="web">
           <img class="portfolio__img" src="assets/img/img__4.jpg" alt="4">
         </li>
-        <li class="portfolio__item">
+        <li class="portfolio__item" data-type="branding">
           <img class="portfolio__img" src="assets/img/img__5.jpg" alt="5">
         </li>
-        <li class="portfolio__item">
+        <li class="portfolio__item" data-type="print">
           <img class="portfolio__img" src="assets/img/img__6.jpg" alt="6">
         </li>
-        <li class="portfolio__item">
+        <li class="portfolio__item" data-type="web">
           <img class="portfolio__img" src="assets/img/img__7.jpg" alt="7">
         </li>
-        <li class="portfolio__item">
+        <li class="portfolio__item" data-type="branding">
           <img class="portfolio__img" src="assets/img/img__8.jpg" alt="8">
         </li>
-        <li class="portfolio__item">
+        <li class="portfolio__item" data-type="print">
           <img class="portfolio__img" src="assets/img/img__9.jpg" alt="9">
         </li>
-        <li class="portfolio__item">
+        <li class="portfolio__item" data-type="print">
           <img class="portfolio__img" src="assets/img/img__10.jpg" alt="10">
         </li>
-        <li class="portfolio__item">
+        <li class="portfolio__item" data-type="html">
           <img class="portfolio__img" src="assets/img/img__11.jpg" alt="11">
         </li>
-        <li class="portfolio__item">
+        <li class="portfolio__item" data-type="html">
           <img class="portfolio__img" src="assets/img/img__12.jpg" alt="12">
         </li>
       </ul>
@@ -129,7 +132,7 @@
       <p class="team__text">
         At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
       </p>
-      <div class="slider team__siema">
+      <div class="slider">
         <!-- slide 1 -->
         <div class="slider__item">
           <img class="slider__img" src="assets/img/team__img__1.jpg" alt="photo">
@@ -141,7 +144,7 @@
             <p class="slider__text">
               At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
               At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis prae-sentium.
               At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
               At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
             </p>
@@ -181,6 +184,12 @@
             </p>
           </article>
         </div>
+        <!-- navigation -->
+      </div>
+      <div class="slider__navigation">
+        <!-- <button class="slider__button slider__button--active"></button> -->
+        <!-- <button class="slider__button"></button> -->
+        <!-- <button class="slider__button"></button> -->
       </div>
     </div>
   </section>
@@ -193,12 +202,12 @@
   </section>
   <!-- testimonials -->
   <section class="testimonials">
+    <h2 class="title testimonials__title">Testimonials</h2>
+    <p class="testimonials__text">
+      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+    </p>
     <div class="container">
-      <h2 class="title testimonials__title">Testimonials</h2>
-      <p class="testimonials__text">
-        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-      </p>
-      <div class="slider testimonials__siema">
+      <div class="slider">
         <!-- slide 1 -->
         <div class="slider__item">
           <img class="slider__img" src="assets/img/partho.png" alt="photo">
@@ -247,6 +256,11 @@
             </p>
           </article>
         </div>
+      </div>
+      <div class="slider__navigation">
+        <!-- <button class="slider__button slider__button--active"></button> -->
+        <!-- <button class="slider__button"></button> -->
+        <!-- <button class="slider__button"></button> -->
       </div>
     </div>
   </section>
@@ -288,43 +302,43 @@
             </symbol>
             <symbol id="iconLinkedin" class="footer__social-icon" viewBox="0 0 12 11.19">
               <title>iconLinkedin</title>
-              <path id="linkedin.svg" class="cls-1" d="M677.412,4629.79h2.4v-7.99h-2.4v7.99Zm9.338-8.27a3.616,3.616,0,0,0-2.942,1.36v-1.11H681.4v8.02h2.406v-4.34a1.907,1.907,0,0,1,1.891-1.81c1.051,0,1.309.9,1.309,1.79v4.36h2.4v-4.54C689.406,4622.1,687.914,4621.52,686.75,4621.52Zm-8.15-2.92a1.2,1.2,0,1,1-1.2,1.2A1.2,1.2,0,0,1,678.6,4618.6Z" transform="translate(-677.406 -4618.59)"/>
+              <path d="M677.412,4629.79h2.4v-7.99h-2.4v7.99Zm9.338-8.27a3.616,3.616,0,0,0-2.942,1.36v-1.11H681.4v8.02h2.406v-4.34a1.907,1.907,0,0,1,1.891-1.81c1.051,0,1.309.9,1.309,1.79v4.36h2.4v-4.54C689.406,4622.1,687.914,4621.52,686.75,4621.52Zm-8.15-2.92a1.2,1.2,0,1,1-1.2,1.2A1.2,1.2,0,0,1,678.6,4618.6Z" transform="translate(-677.406 -4618.59)"/>
             </symbol>
             <symbol id="iconVimeo" class="footer__social-icon" viewBox="0 0 13.593 12">
               <title>iconVimeo</title>
-              <path id="vimeo.svg" class="cls-1" d="M747.8,4622.6c1.2-.96,2.9-3.05,4.226-3.05s1.651,1.56,1.832,2.98,0.7,4.53,1.4,4.53,2.3-2.75,2.211-3.81-1.248-.9-1.885-0.6c0.585-2.12,1.937-3.25,3.666-3.25s2.146,1.22,2.146,2.72c0,2.28-4.629,9.28-7.424,9.28-1.73,0-2.158-2.55-2.509-3.81s-1.041-4.57-1.847-4.78a3.17,3.17,0,0,0-1.2.65Z" transform="translate(-747.813 -4619.41)"/>
+              <path d="M747.8,4622.6c1.2-.96,2.9-3.05,4.226-3.05s1.651,1.56,1.832,2.98,0.7,4.53,1.4,4.53,2.3-2.75,2.211-3.81-1.248-.9-1.885-0.6c0.585-2.12,1.937-3.25,3.666-3.25s2.146,1.22,2.146,2.72c0,2.28-4.629,9.28-7.424,9.28-1.73,0-2.158-2.55-2.509-3.81s-1.041-4.57-1.847-4.78a3.17,3.17,0,0,0-1.2.65Z" transform="translate(-747.813 -4619.41)"/>
             </symbol>
             <symbol id="iconInstagram" class="footer__social-icon" viewBox="0 0 14.375 14.38">
               <title>iconBe</title>
-              <path id="instagram.svg" class="cls-1" d="M723.418,4617.8h-8.836a2.787,2.787,0,0,0-2.784,2.78v8.84a2.787,2.787,0,0,0,2.784,2.78h8.836a2.787,2.787,0,0,0,2.784-2.78v-8.84A2.787,2.787,0,0,0,723.418,4617.8Zm0.877,1.61h0.315v2.39l-2.408.01-0.008-2.4h2.1ZM719,4622.59a2.41,2.41,0,1,1-2.41,2.41A2.421,2.421,0,0,1,719,4622.59Zm5.624,6.65a1.383,1.383,0,0,1-1.381,1.38h-8.511a1.382,1.382,0,0,1-1.381-1.38v-5.84h2a4.566,4.566,0,0,0-.29,1.6,3.939,3.939,0,1,0,7.877,0,4.566,4.566,0,0,0-.29-1.6h1.976v5.84Z" transform="translate(-711.813 -4617.81)"/>
+              <path d="M723.418,4617.8h-8.836a2.787,2.787,0,0,0-2.784,2.78v8.84a2.787,2.787,0,0,0,2.784,2.78h8.836a2.787,2.787,0,0,0,2.784-2.78v-8.84A2.787,2.787,0,0,0,723.418,4617.8Zm0.877,1.61h0.315v2.39l-2.408.01-0.008-2.4h2.1ZM719,4622.59a2.41,2.41,0,1,1-2.41,2.41A2.421,2.421,0,0,1,719,4622.59Zm5.624,6.65a1.383,1.383,0,0,1-1.381,1.38h-8.511a1.382,1.382,0,0,1-1.381-1.38v-5.84h2a4.566,4.566,0,0,0-.29,1.6,3.939,3.939,0,1,0,7.877,0,4.566,4.566,0,0,0-.29-1.6h1.976v5.84Z" transform="translate(-711.813 -4617.81)"/>
             </symbol>
           </svg>
       <!-- iconFacebook svg icon use -->
-          <a href="#">
+          <a class= "footer__social-link footer__social-link--facebook" href="#">
             <svg class="footer__social-icon" width="6.438" height="12.82">
               <use xlink:href="#iconFacebook"></use>
             </svg>
           </a>
           <!-- iconTwitter svg icon use -->
-          <a href="#">
+          <a class= "footer__social-link footer__social-link--twitter" href="#">
             <svg class="footer__social-icon" width="15.187" height="12">
               <use xlink:href="#iconTwitter"></use>
             </svg>
           </a>
       <!-- iconLinkedin svg icon use -->
-          <a href="#">
+          <a class= "footer__social-link footer__social-link--linkedin" href="#">
             <svg class="footer__social-icon" width="12" height="11.19">
               <use xlink:href="#iconLinkedin"></use>
             </svg>
           </a>
       <!-- iconInstagram svg icon use -->
-          <a href="#">
+          <a class= "footer__social-link footer__social-link--instagram" href="#">
             <svg class="footer__social-icon" width="14.375" height="14.38">
               <use xlink:href="#iconInstagram"></use>
             </svg>
           </a>
           <!-- iconVimeo svg icon use -->
-          <a href="#">
+          <a class= "footer__social-link footer__social-link--vimeo" href="#">
             <svg class="footer__social-icon" width="13.593" height="12">
               <use xlink:href="#iconVimeo"></use>
             </svg>
@@ -332,6 +346,8 @@
     </div>
   </section>
   <!-- google map -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js"></script>
   <!-- scripts -->
   <script src="assets/js/main.min.js"></script>
