@@ -108,7 +108,31 @@ $( function() {
   });
 });
 //----------------------------------------------------
-//init google map
+//init google map with promisses
+import loadGoogleMapsAPI from 'load-google-maps-api';
+// var loadGoogleMapsApi = require('load-google-maps-api');
+// loadGoogleMapsAPI.key = 'AIzaSyCfBx8JSgTHL8wZVieZTM-KVkWnzE5Fc3I';
+// console.log(loadGoogleMapsAPI.key);
+// loadGoogleMapsAPI().then(function() {
+//   var beetroot = {lat: 49.569, lng: 34.583};
+//   var map = new google.maps.Map(document.getElementById('map'), {
+//       center: {lat: 49.568, lng: 34.582},
+//       zoom: 15,
+//       center: beetroot
+//     });
+//     var customIcon = 'assets/img/marker__beetroot.png';
+//     var marker = new google.maps.Marker({
+//           position: beetroot,
+//           map: map,
+//           title: 'Beetroot',
+//           animation: google.maps.Animation.DROP,
+//           icon: customIcon
+//         });
+// }).catch((err) => {
+//   console.error(err)
+// });
+
+  //code if don't use promisses------------------------
   var map;
   function initMap() {
     var beetroot = {lat: 49.569, lng: 34.583};

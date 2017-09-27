@@ -16,6 +16,7 @@ var imageminJpegtran = require('imagemin-jpegtran');
 var imageminOptipng = require('imagemin-optipng');
 var media = require('gulp-pipe-media');
 var imagesLoaded = require('imagesloaded');
+var loadGoogleMapsAPI = require('load-google-maps-api');
 
 var config = {
   src:  'src',
